@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: chat-backend
+    env: node
+    plan: free
+    buildCommand: 'npm install'
+    startCommand: 'node server.js'
+    envVars:
+      - key: CORS_ORIGIN
+        value: 'https://ahamadravkuda.netlify.app'
